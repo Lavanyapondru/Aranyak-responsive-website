@@ -18,7 +18,7 @@ function Aboutus() {
             <div className="containerr client">
                 <div className="row">
                     <div className="col-lg-7">
-                        <img src="/badhon.png" className="w-100 badhon"/>
+                        <img src="/badhon.png" className="w-100 badhon mb-3"/>
                     </div>
                         <div className="meet col-lg-5">
                              <h1>Meet Badhon</h1>
@@ -48,19 +48,19 @@ function Aboutus() {
                          <p>Marketing</p>
                          <h5 className="border-secondary ctext">We'll throw some old gray clouds in here just sneaking around...</h5>
                         </div>
-                        <div className="col-lg-4 text-center">
+                        <div className="col-lg-4 text-center mb-5">
                          <img src="/team4.png" className="client1 w-75 mb-3"/>
                          <h3 className="lh-1">Hikaru Sulu</h3>
                          <p>CFO</p>
                          <h5 className="border-secondary ctext">Everything's not great in life, but we can still find beauty in it.</h5>
                         </div>
-                        <div className="col-lg-4 text-center">
+                        <div className="col-lg-4 text-center mb-5">
                          <img src="/team5.png" className="client1 w-75 mb-3"/>
                          <h3 className="lh-1">Pavel Chekov</h3>
                          <p>CTO</p>
                          <h5 className="border-secondary ctext">That is when you can experience true joy, when you have no fear.</h5>
                         </div>
-                        <div className="col-lg-4 text-center">
+                        <div className="col-lg-4 text-center mb-5">
                          <img src="/team6.png" className="client1 w-75 mb-3"/>
                          <h3 className="lh-1">Leonard McCoy</h3>
                          <p>Human Resource</p>

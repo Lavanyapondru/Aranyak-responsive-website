@@ -11,23 +11,24 @@ function Ourproducts() {
         <div>
 
             <div className="container">
-                <div className="ourproducts  mb-3">
+                <div className="ourproducts mb-3">
                 <h2>Our Products</h2>
                 <h1 className="display-3 team"><span className="team1 fw-bold display-2">New</span> Arrivals</h1>
                 <div className="products mt-5 mb-5">
                     <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper"
-      >
+              freeMode={true}
+              pagination={{ clickable: true }}
+              modules={[FreeMode, Pagination]}
+              className="mySwiper"
+              breakpoints={{
+                320: { slidesPerView: 1, spaceBetween: 10 },   // mobile
+                768: { slidesPerView: 2, spaceBetween: 20 },   // tablet
+                1024: { slidesPerView: 3, spaceBetween: 30 },
+                1400: { slidesPerView: 3, spaceBetween: 30 },  
+              }}>
         <SwiperSlide>
             <div className="col">
-              <div className="card h-100">
+              <div className="card">
                <img src="/product1.png" className="card-img-top proimg" alt="..."/>
                <div className="plants pt-3 pb-2">
                   <h5><i class="bi bi-file-earmark-word-fill"></i>  Add to wishlist</h5>
@@ -58,7 +59,7 @@ function Ourproducts() {
         </SwiperSlide>
         <SwiperSlide>
             <div className="col">
-              <div className="card h-100">
+              <div className="card">
                <img src="/product3.png" className="card-img-top proimg" alt="..."/>
                <div className="plants pt-3 pb-2">
                   <h5><i class="bi bi-file-earmark-word-fill"></i>  Add to wishlist</h5>
@@ -73,7 +74,7 @@ function Ourproducts() {
              </SwiperSlide>
         <SwiperSlide>
             <div className="col">
-              <div className="card h-100">
+              <div className="card">
                <img src="/product4.png" className="card-img-top proimg" alt="..."/>
                <div className="plants pt-3 pb-2">
                   <h5><i class="bi bi-file-earmark-word-fill"></i>  Add to wishlist</h5>
@@ -88,7 +89,7 @@ function Ourproducts() {
         </SwiperSlide>
         <SwiperSlide>
             <div className="col">
-              <div className="card h-100">
+              <div className="card">
                <img src="/product5.png" className="card-img-top proimg" alt="..."/>
                <div className="plants pt-3 pb-2">
                   <h5><i class="bi bi-file-earmark-word-fill"></i>  Add to wishlist</h5>
@@ -113,15 +114,16 @@ function Ourproducts() {
                 <h1 className="display-3 team text-end"><span className="team1 fw-bold display-2">Popular</span> Little Plants</h1>
                 <div className="products mt-5 mb-5">
                     <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper"
-      >
+                    freeMode={true}
+              pagination={{ clickable: true }}
+              modules={[FreeMode, Pagination]}
+              className="mySwiper"
+              breakpoints={{
+                320: { slidesPerView: 1, spaceBetween: 10 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                1024: { slidesPerView: 3, spaceBetween: 30 },
+                1400: { slidesPerView: 3, spaceBetween: 30 },
+              }}>
         <SwiperSlide>
               <div className="col">
               <div className="card">
@@ -140,7 +142,7 @@ function Ourproducts() {
         </SwiperSlide>
         <SwiperSlide>
             <div className="col">
-              <div className="card h-100">
+              <div className="card">
                <img src="/product4.png" className="card-img-top proimg" alt="..."/>
                <div className="plants pt-3 pb-2">
                   <h5><i class="bi bi-file-earmark-word-fill"></i>  Add to wishlist</h5>
@@ -155,7 +157,7 @@ function Ourproducts() {
              </SwiperSlide>
         <SwiperSlide>
             <div className="col">
-              <div className="card h-100">
+              <div className="card">
                <img src="/product7.png" className="card-img-top proimg" alt="..."/>
                <div className="plants pt-3 pb-2">
                   <h5><i class="bi bi-file-earmark-word-fill"></i>  Add to wishlist</h5>
@@ -170,7 +172,7 @@ function Ourproducts() {
         </SwiperSlide>
         <SwiperSlide>
             <div className="col">
-              <div className="card h-100">
+              <div className="card">
                <img src="/product2.png" className="card-img-top proimg" alt="..."/>
                <div className="plants pt-3 pb-2">
                   <h5><i class="bi bi-file-earmark-word-fill"></i>  Add to wishlist</h5>
@@ -185,7 +187,7 @@ function Ourproducts() {
         </SwiperSlide>
         <SwiperSlide>
             <div className="col">
-              <div className="card h-100">
+              <div className="card">
                <img src="/product1.png" className="card-img-top proimg" alt="..."/>
                <div className="plants pt-3 pb-2">
                   <h5><i class="bi bi-file-earmark-word-fill"></i>  Add to wishlist</h5>
@@ -208,14 +210,16 @@ function Ourproducts() {
                 <h1 className="display-3 team"><span className="team1 fw-bold display-2">Easy</span> to care plants</h1>
                  <div className="products">
                   <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper"
+              freeMode={true}
+              pagination={{ clickable: true }}
+              modules={[FreeMode, Pagination]}
+              className="mySwiper"
+              breakpoints={{
+                320: { slidesPerView: 1, spaceBetween: 10 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                1024: { slidesPerView: 3, spaceBetween: 30 },
+                1400: { slidesPerView: 3, spaceBetween: 30 },
+              }}
       >
         <SwiperSlide>
               <div className="col">
@@ -235,7 +239,7 @@ function Ourproducts() {
         </SwiperSlide>
         <SwiperSlide>
             <div className="col">
-              <div className="card h-100">
+              <div className="card">
                <img src="/product1.png" className="card-img-top proimg" alt="..."/>
                <div className="plants pt-3 pb-2">
                   <h5><i class="bi bi-file-earmark-word-fill"></i>  Add to wishlist</h5>
@@ -250,7 +254,7 @@ function Ourproducts() {
              </SwiperSlide>
         <SwiperSlide>
             <div className="col">
-              <div className="card h-100">
+              <div className="card">
                <img src="/product9.png" className="card-img-top proimg" alt="..."/>
                <div className="plants pt-3 pb-2">
                   <h5><i class="bi bi-file-earmark-word-fill"></i>  Add to wishlist</h5>
@@ -265,7 +269,7 @@ function Ourproducts() {
         </SwiperSlide>
         <SwiperSlide>
             <div className="col">
-              <div className="card h-100">
+              <div className="card">
                <img src="/product5.png" className="card-img-top proimg" alt="..."/>
                <div className="plants pt-3 pb-2">
                   <h5><i class="bi bi-file-earmark-word-fill"></i>  Add to wishlist</h5>

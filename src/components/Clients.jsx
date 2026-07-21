@@ -39,7 +39,7 @@ function Clients() {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <img src="/clientletter.png"/>
+                            <img src="/clientletter.png" className="img-fluid"/>
                         </div>
                     </div>
                     <button className="btn1 bg-success text-light fs-5 btnreview">Load More <i class="bi bi-arrow-right fs-5"></i></button> 

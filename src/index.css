@@ -113,30 +113,49 @@ body {
 
 .swiper {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: white;
-  height: 100vh !important;
+  height: auto!important;
 
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  padding: 0 15px;
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
+}
+.swiper-pagination {
+  position: relative !important;   /* prevents overlap */
+  margin-top: 20px;                /* spacing below slides */
+  text-align: center;              /* center bullets */
+}
+
+.swiper-pagination-bullet {
+  background: darkgreen;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: orange;
+  opacity: 1;
+}
+.card-body{
+  flex-grow: 1;
 }
 .proimg {
   width: 100% !important;
-  height: 50vh !important;
+  height: auto !important;
   border-radius: 20px 20px 0px 0px !important;
 }
 .plant{
@@ -148,10 +167,18 @@ body {
   background-color: rgb(244, 196, 106) !important;
   color: green !important;
   width: 100% !important;
+  padding: 10px;
+  border-radius: 0 0 10px 10px; 
 }
 .plants:hover {
   color: grey !important;
   background-color: rgb(219, 214, 214) !important;
+  transition: all 0.3s ease;
+}
+.plants h5 {
+  margin: 0; /* removes extra spacing */
+  font-weight: 500;
+  cursor: pointer; /* makes it feel clickable */
 }
 .plants h5:hover {
   color:orange !important;
@@ -243,4 +270,62 @@ body {
 }
 .heart:hover {
   color: orangered !important;
+}
+
+@media screen and (max-width:768px) {
+  .navbar-nav {
+  margin-left: 0px !important;
+}
+.swiper-slide {
+  font-size: 16px;
+  height: auto !important;
+}
+.btncatalog, .btnreview {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+  }
+  .proimg {
+    max-height: 35vh;        
+  }
+}
+@media screen and (max-width: 460px) {
+  .swiper-slide {
+    font-size: 16px;
+  }
+  .proimg {
+    max-height: 35vh;        
+  }
+}
+/* Desktop container: wider and balanced */
+@media screen and (min-width:1024px) {
+  .container {
+    margin: auto !important;
+    max-width: 1200px;   /* balanced width */
+    width: 100% !important;
+  }
+
+  /* Swiper slides: tighter spacing */
+  .swiper-slide {
+    height: auto !important;
+    display: flex;
+    justify-content: center;   /* center card horizontally */
+    align-items: stretch;
+    padding: 0 15px;           /* even spacing between cards */
+  }
+
+  /* Cards: consistent width & equal height */
+  .card {
+    width: 100%;
+    max-width: 320px;          /* balanced card width */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* Equalize card body height */
+  .card-body {
+    flex-grow: 1;              /* stretch body to equal height */
+  }
 }

@@ -6,7 +6,7 @@ function Ablog() {
                     <h1 className="mt-5 mb-5">ARANYAK Blog</h1>
                     <h1 className="team display-3 mt-5 mb-5 lh-1">To Bring more <span className="team1 fw-bold">Green</span><br/> into <span className="team1">your Home</span></h1>
                        <div className="row mt-5 mb-5">
-                            <div className="col">
+                            <div className="col mb-3">
               <div className="card h-100">
                <img src="/blog1.png" className="card-img-top proimg" alt="..."/>
                <div className="plants pt-3 pb-2">
@@ -21,7 +21,7 @@ function Ablog() {
                   </div>
                   </div>
 
-              <div className="col">
+              <div className="col mb-3">
               <div className="card h-100">
                <img src="/blog2.png" className="card-img-top proimg" alt="..."/>
                <div className="plants pt-3 pb-2">

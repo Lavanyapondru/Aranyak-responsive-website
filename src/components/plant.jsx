@@ -18,7 +18,7 @@ function Plant() {
                     <div className="col-lg-6">
                       <h1 className="display-1 lh-1 mb-5 planting"> However Popular or <span className="text-warning fw-bold">rare plant</span><br/> it is</h1>
                         <p className="lead fs-3 mb-5">First timer or experienced, we have something for you. Take a look at our vast collection of greenery & let us help you transform your household and front/back yard.</p>
-                        <button className="btn1 bg-success text-light fs-5">Explore Catalog <i class="bi bi-arrow-right fs-5"></i></button> 
+                        <button className="btn1 bg-success text-light fs-5 mb-5">Explore Catalog <i class="bi bi-arrow-right fs-5"></i></button> 
                     </div>
                     <div className="col-lg-6">
                         <img src="/planting.png" className="w-100"/>
